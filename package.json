@@ -2,9 +2,11 @@
   "name": "pro-backend",
   "version": "1.0.0",
   "description": "A complete professional backend code",
-  "main": "index.js",
+  "type": "module",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.ts",
+    "start": "node src/index.ts"
   },
   "keywords": [
     "backend",
@@ -12,5 +14,8 @@
     "backend"
   ],
   "author": "Amit Sharma",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
